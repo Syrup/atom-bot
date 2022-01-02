@@ -29,7 +29,6 @@ const command: SlashCommandConfig = {
     * -  mentionable
     * -  role
     */
-    // if you fill it with numbers check available types here https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-type
-    type: "string" // can also be filled with numbers
+    type: "string"
   }]
 }
