@@ -1,0 +1,39 @@
+{
+  "name": "atom-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i && tsc && node .",
+    "dev": "npm i && tsc --watch && pm2 start build/index.js --watch",
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/winston": "^2.4.4",
+    "pm2": "latest",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@discordjs/builders": "latest",
+    "@discordjs/rest": "latest",
+    "axios": "latest",
+    "discord-api-types": "latest",
+    "discord.js": "^13.5.0-dev.1640390738.2bfc638",
+    "dotenv": "latest",
+    "got": "latest",
+    "module-alias": "latest",
+    "winston": "latest",
+    "superagent": "latest",
+    "canvas": "^2.8.0"
+  },
+  "_moduleAliases": {
+    "@src": "build",
+    "@typings": "build/typings",
+    "@cores": "build/cores",
+    "@handlers": "build/handlers"
+  }
+}

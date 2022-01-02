@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "target": "es2017",
+    "lib": ["esnext", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "typeRoots": [ "./node_modules/@types" ],
+    "inlineSources": true,
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@src/*": ["./*"],
+      "@typings": ["typings"],
+      "@cores/*": ["cores/*"],
+      "@handlers/*": ["handlers/*"]
+    }
+  },
+  "includes": [
+    "./src/**/*"
+  ]
+}
