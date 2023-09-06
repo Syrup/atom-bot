@@ -1,3 +1,3 @@
 # atom-bot
 
-my first discord bot with typescript language
+my first discord bot written in typescript language
